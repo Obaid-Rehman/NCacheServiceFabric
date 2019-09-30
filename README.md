@@ -212,7 +212,7 @@ More information about NCache Pub/Sub feature can be found [in NCache Documentat
 
 Being a distributed caching provider, NCache is an ideal candidate for caching solutions for microservices applications where scalability, availability and performance are of utmost importance. 
 
-In this regard, besides using the native NCache APIs for caching data, NCache also provides the EF Core caching provider implementation to allow for seamless integration of caching into the application during EF Core CRUD operations. To demonstrate how easy it is to use EF Core caching, consider the following code snippet taken from the [Catalog.API microservice](./src/Services/Catalog/Catalog.API/Controllers/CatalogController.cs) in the solution to fetch a collection of items from the database and cache it in the NCache servers:
+In this regard, besides using the native NCache APIs for caching data, NCache also provides the EF Core caching provider implementation to allow for seamless integration of caching into the application during EF Core CRUD operations. To demonstrate how easy it is to use EF Core caching, consider the following code snippet taken from the [Catalog.API microservice](https://github.com/Obaid-Rehman/NCacheServiceFabric/blob/master/src/Services/Catalog/Catalog.API/Controllers/CatalogController.cs) in the solution to fetch a collection of items from the database and cache it in the NCache servers:
 
 ```csharp  
 if (!_settings.EFCoreCachingEnabled)
