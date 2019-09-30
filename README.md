@@ -373,7 +373,7 @@ public static class NCacheHealthCheckBuilderExtensions
 
 Following are the steps to set-up the application configuration once all the [requirements](#pre-requisites) have been met:
 
-- In the [CommonGateway.API](.\src\CommonGatewayAPI\CommonGateway.API) project project, within the **configuration** folder, is the routing configuration JSON file, titled **configurationSF.json**, used by the [Ocelot](https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html) library to route traffic from the WebMVC microservice to the core microservices (Catalog, Basket, Ordering etc.) for CRUD operations. **Before** [publishing the Service Fabric application](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-to-party-cluster) to the local development cluster or to Azure, make sure to change the **Host** property value given within the **DownstreamHostAndPorts** element to the DNS name of your Service Fabric cluster.
+- In the [CommonGateway.API](https://github.com/Obaid-Rehman/NCacheServiceFabric/tree/master/src/CommonGatewayAPI/CommonGateway.API) project project, within the **configuration** folder, is the routing configuration JSON file, titled **configurationSF.json**, used by the [Ocelot](https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html) library to route traffic from the WebMVC microservice to the core microservices (Catalog, Basket, Ordering etc.) for CRUD operations. **Before** [publishing the Service Fabric application](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-to-party-cluster) to the local development cluster or to Azure, make sure to change the **Host** property value given within the **DownstreamHostAndPorts** element to the DNS name of your Service Fabric cluster.
 Following is the JSON file found in the solution for reference:
 
 ```csharp
@@ -605,7 +605,7 @@ In the parameters shown above, change the URL of the SF cluster, given as **ncac
 
 ```
 
-**IMPORTANT**: The scripts to create AAD support for the cluster need to run **before** creating the Service Fabric cluster in Azure as given [here](https://github.com/Azure-Samples/service-fabric-aad-helpers#create-azure-ad-users).
+**IMPORTANT**: The scripts to create AAD support for the cluster need to run **before** creating the Service Fabric cluster in Azure as given [here](https://github.com/Azure-Samples/service-fabric-aad-helpers#create-azure-ad-users). Full template deployment and parameters json files are found [here](https://github.com/Obaid-Rehman/NCacheServiceFabric/tree/master/src/AzureSFDeployment).
 
 - Make sure add virtual machines that will host the NCache servers and assign them static IP address within the VNET. The steps for that have already been discussed in the pre-requisites section [here](#pre-requisites).
 
