@@ -315,7 +315,7 @@ public static class NCacheDataProtectionBuilderExtensions
 	}
 }
 ```
-The full working copy of this class can be found [here](./src/BuildingBlocks/NCacheDataProtectionBuilderExtensions).
+The full working copy of this class can be found [here](https://github.com/Obaid-Rehman/NCacheServiceFabric/tree/master/src/BuildingBlocks/NCacheDataProtection).
 
 - **NCache Health Checks**
 
